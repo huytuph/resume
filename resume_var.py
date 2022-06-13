@@ -7,7 +7,7 @@ I would like to change my career path into the Tech Industry.
 However, I do not have prefessional experience in this field.
 I have decided to be creative & express my resume in the form 
 of a Python program with the intention of showing you what
-I have learnt in the last few months.
+I have learnt in the past few months.
 """
 
 aboutme = """
