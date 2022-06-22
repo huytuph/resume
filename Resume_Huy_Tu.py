@@ -156,5 +156,4 @@ while True:
         break
     else:
         invalid()
-        continue    
-    continue
+        continue
