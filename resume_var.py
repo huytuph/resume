@@ -29,7 +29,7 @@ I believe code is very powerful, can improve efficiency & give people more time 
 """
 
 hobbies = ["Aquaponics","Billiards","Camping","Chess","Cooking","DIY Projects","Fishing","Puzzles",
-           "Unmanned Aerial Vehicles"]
+           "Quadcopters"]
 
-interests = ["Automation","Artificial Intelligence","Cloud computing","Electronics","Networking",
-             "Programming","Security","Servers","Spreadsheets"]
+interests = ["Automation","Artificial Intelligence","Cloud computing","Databases","Electronics","Networking",
+             "Programming","Security","Servers"]
