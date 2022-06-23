@@ -1,6 +1,6 @@
 # Resume
 Hello World!!
-My Name is Huy Tu Pham.
+My Name is Huy Tu.
 I come from an Automotive background.
 
 I would like to get into the Tech Industry.
