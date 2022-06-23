@@ -3,7 +3,7 @@ Hello World!!
 My Name is Huy Tu Pham.
 I come from an Automotive background.
 
-I would like to change my career path into the Tech Industry.
+I would like to get into the Tech Industry.
 However, I do not have prefessional experience in this field.
 I have decided to be creative & express my resume in the form 
 of a Python program with the intention of showing you what
@@ -28,8 +28,8 @@ I am constantly looking for ways to apply my skills.
 I believe code is very powerful, can improve efficiency & give people more time to do other things that matter.
 """
 
-hobbies = ["Aquaponics","Billiards","Camping","Chess","Cooking","DIY Projects","Fishing","Puzzles",
+hobbies = ["Aquaponics","Camping","Chess","Cooking","Cycling","DIY Projects","Fishing","Puzzles",
            "Quadcopters"]
 
-interests = ["Automation","Artificial Intelligence","Cloud computing","Databases","Electronics","Networking",
-             "Programming","Security","Servers"]
+interests = ["Artificial Intelligence","Automation","Cloud computing","Databases","Electronics","Network Infrastructures",
+             "Programming","Security(Cyber & Physical)","Servers"]
