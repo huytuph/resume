@@ -20,18 +20,19 @@ s2sec = Work("Trades assistant",
              """
              - Generating Sales leads
              - Quotations
-             - System design
+             - Security System design
              - Cable runs
              - Cable management
-             - Equipment fit offs
-             - Programming
+             - Equipment fit offs (Access Control, Intrustion Detection Systems< Surveillance)
+             - Programming Access Control
              - Troubleshooting & maintenance""")
 
 rbi = Work("Vehicle Inspector", 
            "Redbook Inspect", 
            "Nov 2018 - Apr 2022", 
            """
-           - Carry out vehicle safety inspections""")
+           - Carry out vehicle safety inspections according to Commercial Passenger Vehicles Victoria standards, Victorian roadworthy standards & Rideshare Standards
+           - Training new staff""")
 
 subie_werribee = Work("Subaru Specialist", 
                       "Subaru Experience Store - Werribee", 
