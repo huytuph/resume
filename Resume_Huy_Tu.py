@@ -2,6 +2,7 @@
 import resume_var
 import exp_class
 import edu_class
+import random
 
 def invalid():
     print("\n!! invalid option !!\nplease try again...\n")
@@ -10,21 +11,20 @@ print("=================\n Huy Tu's Resume\n=================")
 
 menu_list = ["About me","Experience","Education","Hobbies","Interests","exit"]
 
-print(resume_var.intro)
 while True:
-    intro_opt = input("""If you would like to get to know me more then give me a =] 
-                                ...if not then =[
-                                    Select an option =] or =[: """)
-    if intro_opt == "=]":
-        break
-    elif intro_opt == "=[":
-        print("""error !!!!!!
-              going to main menu now!!""")
+    x_add = random.randrange(0,10)
+    y_add = random.randrange(0,10)
+    xy_add = x_add + y_add
+    add = int(input(f"{x_add} + {y_add} = "))
+    
+    if add == xy_add:
+        print("Correct!!")
         break
     else:
-        invalid()
+        print("""..incorrect
+              try again..""")
         continue
-
+    
 while True:
     menu_num = 0
     print("\n >> Main Menu:")
