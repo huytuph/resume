@@ -9,7 +9,7 @@ def invalid():
 
 print("=================\n Huy Tu's Resume\n=================")
 
-menu_list = ["About me","Experience","Education","Hobbies","Interests","exit"]
+menu_list = ["About me","Experience","Education","Hobbies","Interests","Ctrl+C to quit"]
 
 auth_count = 3
 print("You have 3 chances")
@@ -26,7 +26,7 @@ while auth_count <= 3 and auth_count >= 1:
         print("Correct!!")
         while True:
             menu_num = 0
-            print("\n >> Main Menu:")
+            print(">> Main Menu:")
             for menu_x in menu_list:
                 menu_num += 1
                 print(str(menu_num) + ". " + menu_x)
@@ -151,8 +151,6 @@ while auth_count <= 3 and auth_count >= 1:
                             continue
                     break
     
-            elif menu_opt == "6":
-                break
             else:
                 invalid()
                 continue
