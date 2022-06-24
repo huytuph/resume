@@ -30,7 +30,7 @@ def menu():
         elif menu_opt == "2":
             while True:
                 work_num = 0
-                print("\n>> Experience")
+                print("\n>> Experience Menu")
                 for work_x in exp_class.Work.work_list:
                     work_num += 1
                     print(str(work_num) + ". " + work_x)
