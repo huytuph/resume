@@ -1,19 +1,16 @@
-from itertools import count
 import menu_loop
 import random
 import time
 
 print("starting in..")
-countdown = 3
-while countdown != 0:
-    print(countdown)
-    countdown -= 1
+start_countdown = 3
+while start_countdown != 0:
+    print(start_countdown)
+    start_countdown -= 1
     time.sleep(1)
 
 print("=================\n Huy Tu's Resume\n=================")
-
 print("enter the correct answer to view my resume\nYou have 3 chances")
-
 
 auth_count = 3
 while auth_count != 0:
