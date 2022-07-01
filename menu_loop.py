@@ -1,24 +1,34 @@
 
-import resume_var
-import exp_class
-import edu_class
+import resume_var, exp_class, edu_class, random, time
 
+# invalid function prints if user input is not accepted
 def invalid():
     print("\n!! invalid option !!\nplease try again...\n")
 
+# menu function loop
 def menu():
-    menu_list = ["About me","Experience","Education","Hobbies","Interests","Ctrl+C to quit"]
+    
+    # menu list
+    menu_list = ["About me","Experience","Education","Hobbies","Interests","exit"]
+    
+    # main menu
+    # prints all Main menu options from menu_list
     while True:
         menu_num = 0
-        print(">> Main Menu:")
+        print("\n>> Main Menu:")
         for menu_x in menu_list:
             menu_num += 1
             print(str(menu_num) + ". " + menu_x)
         
+        # User input for main menu selection
         menu_opt = input("\nSelect an option: ")
+        
+        # Main menu 1 - prints About me information imported from resume_var.py
         if menu_opt == "1":
             print("\n>> About Me:")
             print(resume_var.aboutme)
+            
+            # User input for option to return to main menu
             while True:
                 aboutme_opt = str(input("'r' to return to main menu: "))
                 if aboutme_opt == "r":
@@ -26,16 +36,22 @@ def menu():
                 else:
                     invalid()
                     False
-                                    
+        
+        # Main menu 2 - Experience submenu                          
         elif menu_opt == "2":
+            
+            # Prints all previous places of work from exp_class.py
             while True:
                 work_num = 0
                 print("\n>> Experience Menu")
                 for work_x in exp_class.Work.work_list:
                     work_num += 1
                     print(str(work_num) + ". " + work_x)
+                
+                # user input for submenu options
                 work_opt = input("\nSelect an option for more details ('r' to return to main menu): ")
             
+                # work option 1 - prints details about work at s2 Security
                 if work_opt == "1":
                     print(exp_class.s2sec.show())
                     while True:
@@ -45,7 +61,8 @@ def menu():
                         else:
                             invalid()
                             continue
-                    
+                
+                # work option 2 - prints details about work at Redbook Inspect
                 elif work_opt == "2":
                     print(exp_class.rbi.show())
                     while True:
@@ -55,7 +72,8 @@ def menu():
                         else:
                             invalid()
                             continue
-                    
+                
+                # work option 3 - prints details about work at Subaru Werribee
                 elif work_opt == "3":
                     print(exp_class.subie_werribee.show())
                     while True:
@@ -65,7 +83,8 @@ def menu():
                         else:
                             invalid()
                             continue
-                    
+                
+                # work option 4 - prints details about work at Subaru Interactive Docklands
                 elif work_opt == "4":
                     print(exp_class.subie_interactive.show())
                     while True:
@@ -75,7 +94,8 @@ def menu():
                         else:
                             invalid()
                             continue
-                    
+                
+                # work option 5 - prints details about work at Subaru Docklands    
                 elif work_opt == "5":
                     print(exp_class.subie_docklands.show())
                     while True:
@@ -90,7 +110,8 @@ def menu():
                 else:
                     invalid()
                     continue
-                                  
+        
+        # Main menu option 3 - Prints Education details from edu_class.py                         
         elif menu_opt == "3":
             print("\n>> Education:")
             edu_class.lvt_admin.show()
@@ -107,6 +128,7 @@ def menu():
                     invalid()
                     continue
 
+        # Main menu option 4 - prints hobbies from resume_var.py
         elif menu_opt == "4":
             while True:
                 print("\n>> Hobbies:\n")
@@ -120,7 +142,8 @@ def menu():
                         invalid()
                         continue
                 break
-
+        
+        # Main menu option 5 - prints Interest from resume_var.py
         elif menu_opt == "5":
             while True:
                 print("\n>> Interests:\n")
@@ -134,6 +157,17 @@ def menu():
                         invalid()
                         continue
                 break
+            
+        # Main menu option 6 - exit program
+        # 3 second countdown timer on exit
+        elif menu_opt == "6":
+            print("shutting program in..")
+            exit_countdown = 3
+            while exit_countdown != 0:
+                print(exit_countdown)
+                exit_countdown -= 1
+                time.sleep(1)
+            exit()
     
         else:
             invalid()

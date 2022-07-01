@@ -1,4 +1,4 @@
-
+# about me 
 aboutme = """
 I have been in the automotive industry for more than 10 years.
 I have developed many skills from many departments in the automotive industry including service, sales, wholesale and mentoring.
@@ -17,8 +17,10 @@ I am constantly looking for ways to apply my skills.
 I believe code is very powerful, can improve efficiency & give people more time to do other things that matter.
 """
 
+# a list of my hobbies
 hobbies = ["Aquaponics","Camping","Chess","Cooking","Cycling","DIY Projects","Fishing","Puzzles",
            "Quadcopters"]
 
+# a list of my interests
 interests = ["Artificial Intelligence","Automation","Cloud computing","Databases","Electronics","Network Infrastructures",
              "Programming","Security(Cyber & Physical)","Servers"]

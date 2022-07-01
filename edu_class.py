@@ -1,16 +1,27 @@
 class Edu():
+    """
+    A class for Education
+    """
     def __init__(self, course, institution, status):
+        """
+        Each object in the Education Class must have the following attributes
+        - course
+        - institution
+        - status
+        """
         self.course = course
         self.institution = institution
         self.status = status
     
     def show(self):
+        """
+        prints details of the course taken, where it was taken, and current status
+        """
         print(f"""
               Course: {self.course}
               Institution: {self.institution}
               Date: {self.status}
               """)
-        
 
 lvt_admin = Edu("LVTTS Administration - Light Vehicle", 
                 "Box Hill Institute of TAFE", 
