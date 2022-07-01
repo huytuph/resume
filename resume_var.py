@@ -11,10 +11,7 @@ I actively engage in a lot of DIY projects in my spare time as a hobby.
 I have experience with building circuits, programming, spreadsheets, building pcs/servers, network infrastructures, Raspberry Pi’s, Linux & Virtual machines.
 
 I have strong mechanical & electrical knowledge.
-I am passionate & self driven. I take pride in my work & I'm always constantly looking for ways to improve.
-
-I am constantly looking for ways to apply my skills.
-I believe code is very powerful, can improve efficiency & give people more time to do other things that matter.
+I am passionate, self driven & self taught. I take pride in my work & I'm always constantly looking for ways to improve.
 """
 
 # a list of my hobbies
