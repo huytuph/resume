@@ -161,7 +161,7 @@ def menu():
         # Main menu option 6 - exit program
         # 3 second countdown timer on exit
         elif menu_opt == "6":
-            print("shutting program in..")
+            print("shutting down in..")
             exit_countdown = 3
             while exit_countdown != 0:
                 print(exit_countdown)
