@@ -33,7 +33,7 @@ class Work():
               """)
 
 # s2 Security    
-s2sec = Work("Trades assistant", 
+s2sec = Work("Security Technician", 
              "s2 Security", 
              "Apr 2022 - current", 
              """
