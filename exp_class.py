@@ -42,8 +42,9 @@ s2sec = Work("Security Technician",
              - Security System design
              - Cable runs
              - Cable management
+             - Electrical Conduit building
              - Equipment fit offs (Access Control, Intrustion Detection Systems< Surveillance)
-             - Programming Access Control
+             - Wiring Security Systems
              - Troubleshooting & maintenance""")
 
 # Redbook Inspect
