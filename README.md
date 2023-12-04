@@ -5,6 +5,7 @@
 ### The full version of my resume written in Python
 - written in Python
 - protected by Gandalf
+- references available upon request
 
 
 ## Features
@@ -37,14 +38,31 @@ How to install SecIpTool
 
 `git clone https://github.com/huytuph/resume`
 
-2. Run resume_huytu.py
+2. Change directory
+
+`cd resume`
+
+3. Run resume_huytu.py 
 
 `python3 resume_huytu.py`
 
 
 ## Usage
 ---
-examples
+### How to use & navigate the program
+
+1. Run the program
+
+`python3 resume_huytu.py`
+
+2. Pass the math quiz
+
+3. Navigate the menu by entering the number follwed by that relates to the submenu
+
+4. enter 'r' to return to previous menu
+
+5. enter option '8' on main menu to exit the program
+
 
 
 ## Contact
