@@ -26,67 +26,73 @@ class Work():
         """
         Prints a string describing what my job title was, where i worked and the dates i worked
         """
-        print(f"""
-              I was a {self.job_title} at {self.company_name} between {self.date}.
-              Some of my duties & responsibilities were
-              {self.description}
-              """)
+        print(
+        f"""
+        I was a {self.job_title} at {self.company_name} between {self.date}.
+        Some of my duties & responsibilities were:
+        {self.description}""")
+
+# Excelcom
+excelcom = Work(
+        "Security Systems Installer",
+        "Excelcom",
+        "Nov 2022 - current",
+        """
+        - configuring network switches & wireless access points
+        - structured cabling (cat5e, cat6, cat6e, fibre optics & security cable)
+        - cable tray, catenary wire, conduit & ducting installations
+        - network cabinet & server rack installations
+        - equipment fit offs (Access control, Intrusion Detection systems, Surveillance, network devices, rackmount accessories, telecommunication devices)
+        - Security systems install & upgrades
+        - programming zones, areas, users & permission groups
+        - troubleshooting""")
 
 # s2 Security    
-s2sec = Work("Security Technician", 
-             "s2 Security", 
-             "Apr 2022 - current", 
-             """
-             - Generating Sales leads
-             - Quotations
-             - Security System design
-             - Cable runs
-             - Cable management
-             - Electrical Conduit building
-             - Equipment fit offs (Access Control, Intrustion Detection Systems< Surveillance)
-             - Wiring Security Systems
-             - Troubleshooting & maintenance""")
+s2sec = Work(
+        "Security Technician", 
+        "s2 Security", 
+        "Apr 2022 - Nov 2022", 
+        """
+        - cat5e, cat6 & security cable installations
+        - cable management
+        - conduit & ducting installations
+        - equipment fit offs (Access Control, Intrustion Detection systems, Surveillance)
+        - generating Sales leads
+        - Security System design
+        - troubleshooting""")
 
 # Redbook Inspect
-rbi = Work("Vehicle Inspector", 
-           "Redbook Inspect", 
-           "Nov 2018 - Apr 2022", 
-           """
-           - Carry out vehicle safety inspections according to Commercial Passenger Vehicles Victoria standards, Victorian roadworthy standards & Rideshare Standards
-           - Training new staff""")
+rbi = Work(
+        "Senior Vehicle Inspector",
+        "Redbook Inspect,Carsales.com", 
+        "Nov 2018 - Apr 2022", 
+        """
+        - Mentorship program with SecDevOps Engineer from carsales(6 months)
+        - carry out vehicle safety inspections according to Commercial Passenger Vehicles Victoria standards, Victorian Roadworthy standards & Rideshare Standards
+        - carry out pre-purchase inspections
+        - training staff""")
 
-# Subaru Werribee
-subie_werribee = Work("Subaru Specialist", 
-                      "Subaru Experience Store - Werribee", 
-                      "Dec 2016 - Nov 2018", """
-                      - Keeping the showroom clean & presentable
-                      - Generating sales leads
-                      - Organizing test drives
-                      - Explaining vehicle features to customers
-                      - Demonstrating vehicle capabilities
-                      - Selling Merchandise""")
-
-# Subaru Interactive Docklands
-subie_interactive = Work("Senior Test driver", 
-                         "Subaru Interactive - Docklands", 
-                         "Nov 2013 - Nov 2018", 
-                         """
-                         - Keeping the showroom clean & presentable
-                         - Generating sales leads
-                         - Organizing test drives
-                         - Explaining vehicle features to customers
-                         - Demonstrating vehicle capabilities""")
+# Subaru Interactive
+subie_interactive = Work(
+        "Subaru Specialist", 
+        "Subaru Interactive - Docklands/Essendon/Werribee", 
+        "Nov 2013 - Nov 2018", 
+        """
+        - generating sales leads
+        - demonstrating & explaining vehicle features & technology
+        - selling merchandise""")
 
 # Subaru Docklands
-subie_docklands = Work("Light Vehicle Mechanic", 
-                       "Subaru Docklands", 
-                       "Jul 2012 - Nov 2018", 
-                       """
-                       - Service and Repair Vehicles
-                       - Carry out Roadworthy Inspections
-                       - Carry out tyre replacements, wheel rotation and balancing
-                       - Carry out brake disc machining
-                       - Diagnosing electrical and mechanical faults
-                       - Recondition used vehicles
-                       - Training apprentices
-                       - Workplace Maintenance""")
+subie_docklands = Work(
+        "Senior Automotive Technician",
+        "Subaru Docklands/Essendon",
+        "Jul 2012 - Nov 2018",
+        """
+        - Service and Repair Vehicles
+        - Carry out Roadworthy Inspections
+        - Carry out tyre replacements, wheel rotation and balancing
+        - Carry out brake disc machining
+        - Diagnosing electrical and mechanical faults
+        - Recondition used vehicles
+        - Training apprentices
+        - Workplace Maintenance""")

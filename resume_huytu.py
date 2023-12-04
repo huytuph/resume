@@ -33,7 +33,7 @@ while auth_count != 0:
         menu_loop.menu()
 
     elif add != xy_add and auth_count > 0 and auth_count <= 3:
-        print(f"..incorrect\nyou have {auth_count} chances left..")
+        print(f"..incorrect\nyou have {auth_count} attempts left..")
         continue
     
     # Gandalf will deny you access to my resume if you have answered incorrectly 3 times
