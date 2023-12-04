@@ -38,7 +38,7 @@ while auth_count != 0:
     
     # Gandalf will deny you access to my resume if you have answered incorrectly 3 times
     elif auth_count == 0:
-        print("\nGandalf: you shall not pass4!!")
+        print("\nGandalf: you shall not pass!!")
         break
     else:
         menu_loop.invalid()
