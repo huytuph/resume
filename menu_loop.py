@@ -6,7 +6,7 @@ def invalid():
     print("\n!! invalid option !!\nplease try again...\n")
 
 def divide():
-    print("\n\n#############################################################\n")
+    print("\n\n########################################################\n")
 
 # menu function loop
 def menu():
