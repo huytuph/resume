@@ -1,5 +1,7 @@
 # Tu's Resume
 
+---
+
 ## About The Project
 ### The full version of my resume written in Python
 - written in Python
