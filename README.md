@@ -5,8 +5,8 @@
 ### The full version of my resume written in Python
 - written in Python
 - protected by Gandalf
+- private projects available upon request 
 - references available upon request
-
 
 ## Features
 ---
