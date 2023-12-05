@@ -33,7 +33,7 @@ Installation requirements
 `python3 --version`
 
 ### Installation
-How to install SecIpTool
+How to install resume_huytu.py
 1. Clone the repo
 
 `git clone https://github.com/huytuph/resume`
