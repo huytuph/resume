@@ -63,7 +63,7 @@ How to install resume_huytu.py
 
 4. enter 'r' to return to previous menu
 
-5. enter option '8' on main menu to exit the program
+5. enter option '8' on main menu or 'CTRL-C' anytime to exit
 
 ---
 
