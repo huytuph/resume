@@ -1,15 +1,15 @@
 # Tu's Resume
 
 ## About The Project
----
 ### The full version of my resume written in Python
 - written in Python
 - protected by Gandalf
 - private projects available upon request 
 - references available upon request
 
-## Features
 ---
+
+## Features
 ### Main Menu
 - about me
 - experience
@@ -19,9 +19,9 @@
 - interests
 - hobbies
 
+---
 
 ## Getting Started
----
 ### Prerequisites
 Installation requirements
 - python3
@@ -46,9 +46,9 @@ How to install resume_huytu.py
 
 `python3 resume_huytu.py`
 
+---
 
 ## Usage
----
 ### How to use & navigate the program
 
 1. Run the program
@@ -63,8 +63,9 @@ How to install resume_huytu.py
 
 5. enter option '8' on main menu to exit the program
 
-
+---
 
 ## Contact
----
 #### huytuph@gmail.com
+
+---
