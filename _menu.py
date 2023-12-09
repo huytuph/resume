@@ -1,12 +1,11 @@
 import _aboutme, _exp, _edu, random, time
 
-def _invalid():    # invalid if user input is not accepted
-    """
-    invalid if user input is not accepted
-    """
+def _invalid():
+    """invalid if user input is not accepted"""
     print("\n!! invalid option !!\nplease try again...\n")
 
-def _return():    # return to previous menu
+def _return():
+    """ return to previous menu"""
     while True:
         opt = str(input("\n'r' to return to previous menu: "))
         if opt == "r":
@@ -15,10 +14,12 @@ def _return():    # return to previous menu
             _invalid()
             continue
             
-def _divide():    # menu divider
+def _divide():
+    """menu divider"""
     print("\n\n######################################################################\n")
 
-def menu():    # main menu
+def menu():
+    """main menu"""
     menu_list = ["About me","Experience","Education","Skills","Licenses & Certifications","Interests","Hobbies","exit"]
     while True:
         menu_num = 0
@@ -28,7 +29,6 @@ def menu():    # main menu
             menu_num += 1
             print(str(menu_num) + ". " + menu_x)
         menu_opt = input("\nSelect an option: ")    # user input for main menu selection
-        
         if menu_opt == "1":    # main menu 1 - About me
             _divide()
             print("\n>> ABOUT ME:\n")
