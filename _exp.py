@@ -3,8 +3,7 @@ class Work():
     A Class for places of work
     """
     
-    # a list of places of work
-    work_list = []
+    work_list = []    # a list of places of work
     
     def __init__(self, job_title, company_name, date, description):
         """
@@ -18,10 +17,7 @@ class Work():
         self.company_name = company_name
         self.date = date
         self.description = description
-        
-        # adds the company name to the work list 
-        self.work_list.append(company_name)        
-        
+        self.work_list.append(company_name)    # adds the company name to work_list         
     def show(self):
         """
         Prints a string describing what my job title was, where i worked and the dates i worked
@@ -31,7 +27,6 @@ class Work():
         I was a {self.job_title} at {self.company_name} between {self.date}.
         Some of my duties & responsibilities were:
         {self.description}""")
-
 # Excelcom
 excelcom = Work(
         "Security Systems Installer",
@@ -46,7 +41,6 @@ excelcom = Work(
         - Security systems install & upgrades
         - programming zones, areas, users & permission groups
         - troubleshooting""")
-
 # s2 Security    
 s2sec = Work(
         "Security Technician", 
@@ -60,7 +54,6 @@ s2sec = Work(
         - generating Sales leads
         - Security System design
         - troubleshooting""")
-
 # Redbook Inspect
 rbi = Work(
         "Senior Vehicle Inspector",
@@ -71,7 +64,6 @@ rbi = Work(
         - carry out vehicle safety inspections according to Commercial Passenger Vehicles Victoria standards, Victorian Roadworthy standards & Rideshare Standards
         - carry out pre-purchase inspections
         - training staff""")
-
 # Subaru Interactive
 subie_interactive = Work(
         "Subaru Specialist", 
@@ -81,7 +73,6 @@ subie_interactive = Work(
         - generating sales leads
         - demonstrating & explaining vehicle features & technology
         - selling merchandise""")
-
 # Subaru Docklands
 subie_docklands = Work(
         "Senior Automotive Technician",
