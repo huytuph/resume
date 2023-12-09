@@ -1,5 +1,5 @@
 
-import resume_var, exp_class, edu_class, random, time
+import resume_var, _exp, _edu, random, time
 
 # invalid function prints if user input is not accepted
 def _invalid():
