@@ -13,8 +13,7 @@ for x in myname:
     print(x)
     time.sleep(0.1)
 
-# a simple math challenge for the users to enter the main menu
-# will randomly generate a new math problem if answered incorrectly
+# a math challenge to enter the main menu
 time.sleep(1)
 print("enter the correct answer to view my resume\nYou have 3 chances")
 auth_count = 3
