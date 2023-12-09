@@ -30,7 +30,7 @@ while auth_count != 0:
     
     if add == str(xy_add):
         print("Correct!!")
-        menu_loop.menu()
+        _menu.menu()
 
     elif add != xy_add and auth_count > 0 and auth_count <= 3:
         print(f"..incorrect\nyou have {auth_count} attempts left..")
