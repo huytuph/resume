@@ -1,6 +1,9 @@
 import _aboutme, _exp, _edu, random, time
 
 def _invalid():    # invalid if user input is not accepted
+    """
+    invalid if user input is not accepted
+    """
     print("\n!! invalid option !!\nplease try again...\n")
 
 def _return():    # return to previous menu
