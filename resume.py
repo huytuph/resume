@@ -1,4 +1,4 @@
-import _menu, random, time
+import menu_, random, time
 
 myname = [
 "--------------------------------------------------------------",
@@ -25,7 +25,7 @@ while auth_count != 0:
     auth_count -= 1
     if add == str(xy_add):    # correct answer - displays Main menu
         print("Correct!!")
-        _menu.menu()
+        menu_.menu()
     elif add != xy_add and auth_count > 0 and auth_count <= 3:    # generates math challenge
         print(f"..incorrect\nyou have {auth_count} attempts left..")
         continue
@@ -33,5 +33,5 @@ while auth_count != 0:
         print("\nGandalf: you shall not pass!!")
         break
     else:
-        _menu.invalid()
+        menu_.invalid()
         continue    # invalid option - displays math challenge
