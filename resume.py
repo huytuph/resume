@@ -21,8 +21,7 @@ auth_count = 3
 while auth_count != 0:
     x_add = random.randrange(0,12)
     y_add = random.randrange(0,12)
-    xy_add = x_add + y_add
-        
+    xy_add = x_add + y_add    
     add = input(f"\n{x_add} + {y_add} = ")
     auth_count -= 1
     if add == str(xy_add):    # correct answer - displays Main menu
