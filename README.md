@@ -44,9 +44,9 @@ How to install resume_huytu.py
 
 `cd resume`
 
-3. Run resume_huytu.py 
+3. Run resume.py 
 
-`python3 resume_huytu.py`
+`python3 resume.py`
 
 ---
 
@@ -55,7 +55,7 @@ How to install resume_huytu.py
 
 1. Run the program
 
-`python3 resume_huytu.py`
+`python3 resume.py`
 
 2. Pass the math quiz
 
