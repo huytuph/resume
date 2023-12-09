@@ -45,31 +45,38 @@ def menu():
                     work_num += 1
                     print(str(work_num) + ". " + work_x)
                 work_opt = input("\nSelect an option for more details ('r' to return to main menu): ")  
+                
                 if work_opt == "1":    # work option 1 - Excelcom
                     _divide()
                     print(exp_.excelcom.show())
                     _return() 
+                
                 elif work_opt == "2":    # work option 2 - s2 Security
                     _divide()
                     print(exp_.s2sec.show())
                     _return()
+                
                 elif work_opt == "3":     # work option 3 - Redbook Inspect
                     _divide()
                     print(exp_.rbi.show())
                     _return()
+                
                 elif work_opt == "4":    # work option 4 - Subaru Interactive
                     _divide()
                     print(exp_.subie_interactive.show())
                     _return() 
+                
                 elif work_opt == "5":    # work option 5 - Subaru Docklands   
                     _divide()
                     print(exp_.subie_docklands.show())
                     _return()
+                
                 elif work_opt == "r":    # return to Main menu
                     break
+                
                 else:    # invalid option - displays Experience menu
                     _invalid()
-                    continue   
+                    continue
                                       
         elif menu_opt == "3":    # main menu option 3 - Education
             _divide()
