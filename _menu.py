@@ -1,12 +1,9 @@
+import _aboutme, _exp, _edu, random, time
 
-import resume_var, _exp, _edu, random, time
-
-# invalid function prints if user input is not accepted
-def _invalid():
+def _invalid():    # invalid if user input is not accepted
     print("\n!! invalid option !!\nplease try again...\n")
 
-# return to previous menu
-def _return():
+def _return():    # return to previous menu
     while True:
         opt = str(input("\n'r' to return to previous menu: "))
         if opt == "r":
@@ -14,20 +11,12 @@ def _return():
         else:
             _invalid()
             continue
-
-# menu divider
-def _divide():
+            
+def _divide():    # menu divider
     print("\n\n######################################################################\n")
 
-
-# menu function loop
-def menu():
-    
-    # menu list
+def menu():    # main menu
     menu_list = ["About me","Experience","Education","Skills","Licenses & Certifications","Interests","Hobbies","exit"]
-    
-    # main menu
-    # prints all Main menu options from menu_list
     while True:
         menu_num = 0
         _divide()
@@ -35,134 +24,99 @@ def menu():
         for menu_x in menu_list:
             menu_num += 1
             print(str(menu_num) + ". " + menu_x)
-
-        # User input for main menu selection
-        menu_opt = input("\nSelect an option: ")
+        menu_opt = input("\nSelect an option: ")    # user input for main menu selection
         
-        # Main menu 1 - prints About me information imported from resume_var.py
-        if menu_opt == "1":
+        if menu_opt == "1":    # main menu 1 - About me
             _divide()
             print("\n>> ABOUT ME:\n")
-            print(resume_var.aboutme)
-            
-            # User input for option to return to main menu
-            _return()
-        
-        # Main menu 2 - Experience submenu                          
-        elif menu_opt == "2":
-            
-            # Prints all previous places of work from exp_class.py
+            print(_aboutme.aboutme)
+            _return()               
+        elif menu_opt == "2":    # main menu 2 - Experience menu
             while True:
                 work_num = 0
                 _divide()
-                print("\n>> EXPERIENCE menu:\n")
-                for work_x in exp_class.Work.work_list:
+                print("\n>> EXPERIENCE menu:\n")    # Eperience menu
+                for work_x in _exp.Work.work_list:
                     work_num += 1
                     print(str(work_num) + ". " + work_x)
-                
-                # user input for submenu options
-                work_opt = input("\nSelect an option for more details ('r' to return to main menu): ")
-            
-                # work option 1 - prints details about work at Excelcom
-                if work_opt == "1":
+                work_opt = input("\nSelect an option for more details ('r' to return to main menu): ")  
+                if work_opt == "1":    # work option 1 - Excelcom
                     _divide()
-                    print(exp_class.excelcom.show())
-                    _return()
-                
-                # work option 2 - prints details about work at s2 Security
-                elif work_opt == "2":
+                    print(_exp.excelcom.show())
+                    _return() 
+                elif work_opt == "2":    # work option 2 - s2 Security
                     _divide()
-                    print(exp_class.s2sec.show())
+                    print(_exp.s2sec.show())
                     _return()
-
-                # work option 3 - prints details about work at Redbook Inspect
-                elif work_opt == "3":
+                elif work_opt == "3":     # work option 3 - Redbook Inspect
                     _divide()
-                    print(exp_class.rbi.show())
+                    print(_exp.rbi.show())
                     _return()
-                
-                # work option 4 - prints details about work at Subaru Interactive
-                elif work_opt == "4":
+                elif work_opt == "4":    # work option 4 - Subaru Interactive
                     _divide()
-                    print(exp_class.subie_interactive.show())
-                    _return()
-                
-                # work option 5 - prints details about work at Subaru Docklands    
-                elif work_opt == "5":
+                    print(_exp.subie_interactive.show())
+                    _return() 
+                elif work_opt == "5":    # work option 5 - Subaru Docklands   
                     _divide()
-                    print(exp_class.subie_docklands.show())
+                    print(_exp.subie_docklands.show())
                     _return()
-                
-                elif work_opt == "r":
+                elif work_opt == "r":    # return to Main menu
                     break
-                else:
+                else:    # invalid option - displays Experience menu
                     _invalid()
-                    continue
-        
-        # Main menu option 3 - Prints Education details from edu_class.py                         
-        elif menu_opt == "3":
+                    continue                         
+        elif menu_opt == "3":    # main menu option 3 - Education
             _divide()
             print("\n>> EDUCATION:\n")
-            edu_class.thm.show()
-            edu_class.ewp_boom.show()
-            edu_class.yellow_card.show()
-            edu_class.metro.show()
-            edu_class.rail.show()
-            edu_class.inner_range.show()
-            edu_class.white_card.show()
-            edu_class.aws_cert.show()
-            edu_class.solo_py.show()
-            edu_class.lvt_admin.show()
-            edu_class.lvt_structural.show()
-            edu_class.lvt_inspect.show()
-            edu_class.auto_cert.show()
-            edu_class.auto_apprentice.show()
-            edu_class.auto_pre.show()     
+            _edu.thm.show()
+            _edu.ewp_boom.show()
+            _edu.yellow_card.show()
+            _edu.metro.show()
+            _edu.rail.show()
+            _edu.inner_range.show()
+            _edu.white_card.show()
+            _edu.aws_cert.show()
+            _edu.solo_py.show()
+            _edu.lvt_admin.show()
+            _edu.lvt_structural.show()
+            _edu.lvt_inspect.show()
+            _edu.auto_cert.show()
+            _edu.auto_apprentice.show()
+            _edu.auto_pre.show()     
             _return()
-
-        # Main menu option 4 - prints Skills from resume_var.py
-        elif menu_opt == "4":
+        elif menu_opt == "4":    # main menu option 4 - Skills
             while True:
                 _divide()
                 print("\n>> SKILLS:\n")
-                for skill_x in resume_var.skills:
+                for skill_x in _aboutme.skills:
                     print(str("- ") + skill_x)
                 _return()
                 break
-        
-        # Main menu option 5 - prints Licenses & Certifications from resume_var.py
-        elif menu_opt == "5":
+        elif menu_opt == "5":     # main menu option 5 - Licenses & Certifications
             while True:
                 _divide()
                 print("\n>> LICENSES & CERTIFICATIONS:\n")
-                for cert_x in resume_var.licenses_cert:
+                for cert_x in _aboutme.licenses_cert:
                     print(str("- ") + cert_x)
                 _return()
                 break
-            
-       # Main menu option 6 - prints Interest from resume_var.py
-        elif menu_opt == "6":
+        elif menu_opt == "6":    # main menu option 6 - Interest
             while True:
                 _divide()
                 print("\n>> INTEREST:\n")
-                for int_x in resume_var.interests:
+                for int_x in _aboutme.interests:
                     print(str("- ") + int_x)
                 _return()
                 break
-       
-       # Main menu option 7 - prints Hobbies from resume_var.py
-        elif menu_opt == "7":
+            elif menu_opt == "7":    # main menu option 7 - Hobbies
             while True:
                 _divide()
                 print("\n>> HOBBIES:\n")
-                for hob_x in resume_var.hobbies:
+                for hob_x in _aboutme.hobbies:
                     print(str("- ") + hob_x)
                 _return()
                 break
-
-       # Main menu option 8 - exit program
-       # 3 second countdown timer on exit
-        elif menu_opt == "8":
+        elif menu_opt == "8":    # main menu option 8 - Exit program
             _divide()
             print("shutting down in..")
             exit_countdown = 3
@@ -171,7 +125,6 @@ def menu():
                 exit_countdown -= 1
                 time.sleep(1)
             exit()
-    
-        else:
+        else:    # invalid option - displays Main menu
             _invalid()
             continue
