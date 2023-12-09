@@ -1,7 +1,5 @@
 class Edu():
-    """
-    a class for Education
-    """
+    """Education"""
     def __init__(self, course, institution, status):
         """
         Each object in the Education Class must have the following attributes
@@ -13,9 +11,7 @@ class Edu():
         self.institution = institution
         self.status = status
     def show(self):
-        """
-        prints details of the course taken, where it was taken, and current status
-        """
+        """prints details of the course taken, where it was taken, and current status"""
         print(
         f"""
         Course: {self.course}
@@ -34,7 +30,6 @@ yellow_card = Edu(
         "Operating elevating work platform",
         "Start Training",
         "Completed in 2023")
-
 metro = Edu(
         "Train Track Safety Awareness",
         "Metro Academy",
