@@ -1,4 +1,4 @@
-import menu_loop, random, time
+import _menu, random, time
 
 myname = [
 "--------------------------------------------------------------",
