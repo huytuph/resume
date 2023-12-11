@@ -51,7 +51,7 @@ def menu():
                 for work_x in exp_.Work.work_list:
                     work_num += 1
                     print(f'[{str(work_num)}] {work_x}')
-                print("[q] quit to main menu")
+                print("[r] return to main menu")
                 work_opt = input("\nSelect an option: ")  
                 
                 if work_opt == "1":    # work option 1 - Excelcom
@@ -80,7 +80,7 @@ def menu():
                     print(exp_.subie_docklands.show())
                     _return()
                 
-                elif work_opt == "q" or work_opt == "Q":    # return to Main menu
+                elif work_opt == "r" or work_opt == "R":    # return to Main menu
                     break
                 
                 else:    # invalid option - displays Experience menu
