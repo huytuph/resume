@@ -17,25 +17,26 @@ def _invalid():
 def _return():
     """ return to previous menu"""
     while True:
-        opt = str(input("\n'r' to return to previous menu: "))
-        if opt == "r":
+        opt = str(input("\n[r] to return to previous menu: "))
+        if opt == "r" or opt == "R":
             break
         else:
             _invalid()
             continue
 
+# MAIN MENU
 def menu():
-    """main menu"""
-    menu_list = ["About me","Experience","Education","Skills","Licenses & Certifications","Interests","Hobbies","exit"]
+    menu_list = ["About me","Experience","Education","Skills","Licenses & Certifications","Interests","Hobbies"]
     while True:
         clear_screen()
         menu_num = 0
         print("\n>> MAIN MENU:\n")
-        for menu_x in menu_list:
+        for menu_x in menu_list:    # show Main Menu options
             menu_num += 1
-            print(str(menu_num) + ". " + menu_x)
-        
-        menu_opt = input("\nSelect an option: ")    # user input for main menu selection
+            print(f'[{str(menu_num)}] {menu_x}')
+        print('[q] quit')
+
+        menu_opt = input("\nSelect an option: ")    # user input for main menu option
         if menu_opt == "1":    # main menu 1 - About me
             clear_screen()
             print("\n>> ABOUT ME:\n")
@@ -49,8 +50,9 @@ def menu():
                 print("\n>> EXPERIENCE menu:\n")    # Eperience menu
                 for work_x in exp_.Work.work_list:
                     work_num += 1
-                    print(str(work_num) + ". " + work_x)
-                work_opt = input("\nSelect an option for more details ('r' to return to main menu): ")  
+                    print(f'[{str(work_num)}] {work_x}')
+                print("[q] quit to main menu")
+                work_opt = input("\nSelect an option: ")  
                 
                 if work_opt == "1":    # work option 1 - Excelcom
                     clear_screen()
@@ -72,12 +74,13 @@ def menu():
                     print(exp_.subie_interactive.show())
                     _return() 
                 
+
                 elif work_opt == "5":    # work option 5 - Subaru Docklands   
                     clear_screen()
                     print(exp_.subie_docklands.show())
                     _return()
                 
-                elif work_opt == "r":    # return to Main menu
+                elif work_opt == "q" or work_opt == "Q":    # return to Main menu
                     break
                 
                 else:    # invalid option - displays Experience menu
@@ -140,7 +143,7 @@ def menu():
                 _return()
                 break
             
-        elif menu_opt == "8":    # main menu option 8 - Exit program
+        elif menu_opt == "q" or menu_opt == "Q":    # main menu option 8 - Exit program
             clear_screen()
             print("shutting down in..")
             exit_countdown = 3
