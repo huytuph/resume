@@ -1,5 +1,15 @@
-import menu_, random, time
+import menu_, random, time, os
 
+def clear_screen():
+    """
+    clears screen for all operating systems
+    """
+    if os.name == 'nt': # 'nt' == windows
+        os.system('cls')    # if os = windows:
+    else:
+        os.system('clear')  # if os = linux/unix:
+               
+clear_screen()
 myname = [
 "--------------------------------------------------------------",
 "  _   _         _   _   _____          ____  _                ",
