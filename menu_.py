@@ -1,5 +1,15 @@
-import aboutme_, exp_, edu_, random, time
+import aboutme_, exp_, edu_, random, time, os
 
+
+def clear_screen():
+    """
+    clears screen for all operating systems
+    """
+    if os.name == 'nt': # 'nt' == windows
+        os.system('cls')    # if os = windows:
+    else:
+        os.system('clear')  # if os = linux/unix:
+        
 def _invalid():
     """invalid if user input is not accepted"""
     print("\n!! invalid option !!\nplease try again...\n")
@@ -13,17 +23,13 @@ def _return():
         else:
             _invalid()
             continue
-            
-def _divide():
-    """menu divider"""
-    print("\n\n######################################################################\n")
 
 def menu():
     """main menu"""
     menu_list = ["About me","Experience","Education","Skills","Licenses & Certifications","Interests","Hobbies","exit"]
     while True:
+        clear_screen()
         menu_num = 0
-        _divide()
         print("\n>> MAIN MENU:\n")
         for menu_x in menu_list:
             menu_num += 1
@@ -31,15 +37,15 @@ def menu():
         
         menu_opt = input("\nSelect an option: ")    # user input for main menu selection
         if menu_opt == "1":    # main menu 1 - About me
-            _divide()
+            clear_screen()
             print("\n>> ABOUT ME:\n")
             print(aboutme_.aboutme)
             _return()
                            
         elif menu_opt == "2":    # main menu 2 - Experience menu
             while True:
+                clear_screen()
                 work_num = 0
-                _divide()
                 print("\n>> EXPERIENCE menu:\n")    # Eperience menu
                 for work_x in exp_.Work.work_list:
                     work_num += 1
@@ -47,27 +53,27 @@ def menu():
                 work_opt = input("\nSelect an option for more details ('r' to return to main menu): ")  
                 
                 if work_opt == "1":    # work option 1 - Excelcom
-                    _divide()
+                    clear_screen()
                     print(exp_.excelcom.show())
                     _return() 
                 
                 elif work_opt == "2":    # work option 2 - s2 Security
-                    _divide()
+                    clear_screen()
                     print(exp_.s2sec.show())
                     _return()
                 
                 elif work_opt == "3":     # work option 3 - Redbook Inspect
-                    _divide()
+                    clear_screen()
                     print(exp_.rbi.show())
                     _return()
                 
                 elif work_opt == "4":    # work option 4 - Subaru Interactive
-                    _divide()
+                    clear_screen()
                     print(exp_.subie_interactive.show())
                     _return() 
                 
                 elif work_opt == "5":    # work option 5 - Subaru Docklands   
-                    _divide()
+                    clear_screen()
                     print(exp_.subie_docklands.show())
                     _return()
                 
@@ -79,7 +85,7 @@ def menu():
                     continue
                                       
         elif menu_opt == "3":    # main menu option 3 - Education
-            _divide()
+            clear_screen()
             print("\n>> EDUCATION:\n")
             edu_.thm.show()
             edu_.ewp_boom.show()
@@ -100,7 +106,7 @@ def menu():
             
         elif menu_opt == "4":    # main menu option 4 - Skills
             while True:
-                _divide()
+                clear_screen()
                 print("\n>> SKILLS:\n")
                 for skill_x in aboutme_.skills:
                     print(str("- ") + skill_x)
@@ -109,7 +115,7 @@ def menu():
             
         elif menu_opt == "5":     # main menu option 5 - Licenses & Certifications
             while True:
-                _divide()
+                clear_screen()
                 print("\n>> LICENSES & CERTIFICATIONS:\n")
                 for cert_x in aboutme_.licenses_cert:
                     print(str("- ") + cert_x)
@@ -118,7 +124,7 @@ def menu():
             
         elif menu_opt == "6":    # main menu option 6 - Interest
             while True:
-                _divide()
+                clear_screen()
                 print("\n>> INTEREST:\n")
                 for int_x in aboutme_.interests:
                     print(str("- ") + int_x)
@@ -127,7 +133,7 @@ def menu():
             
         elif menu_opt == "7":    # main menu option 7 - Hobbies
             while True:
-                _divide()
+                clear_screen()
                 print("\n>> HOBBIES:\n")
                 for hob_x in aboutme_.hobbies:
                     print(str("- ") + hob_x)
@@ -135,7 +141,7 @@ def menu():
                 break
             
         elif menu_opt == "8":    # main menu option 8 - Exit program
-            _divide()
+            clear_screen()
             print("shutting down in..")
             exit_countdown = 3
             while exit_countdown != 0:
