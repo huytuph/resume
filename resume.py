@@ -11,12 +11,14 @@ def clear_screen():
                
 clear_screen()
 myname = [
-"--------------------------------------------------------------",
+"                                                              ",
+"                                                              ",
 "  _   _         _   _   _____          ____  _                ",
 " | |_| | _   _ | |_| | |_   _| _   _  |  . || |_  ___  _____  ",
 " |  _  || |_| ||___  |   | |  | |_| | | ___||   |/.  ||     | ",
 " |_| |_||_____||_____|   |_|  |_____| |_|   |_|_||_|_||_|_|_| ",
-"--------------------------------------------------------------",
+"                                                              ",
+"##############################################################",
 " "
 ]
 for x in myname:
@@ -25,7 +27,7 @@ for x in myname:
 
 # a math challenge to enter the main menu
 time.sleep(1)
-print("enter the correct answer to view my resume\nYou have 3 chances")
+print("enter the correct answer to view my resume\nYou have 3 chances..")
 auth_count = 3
 while auth_count != 0:
     x_add = random.randrange(0,12)
