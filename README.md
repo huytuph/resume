@@ -59,15 +59,15 @@ How to install resume_huytu.py
 
 2. Pass the math quiz
 
-3. Navigate the menu by entering the number follwed by that relates to the submenu
+3. Navigate the menu by entering the number that relates to sub menu
 
 4. enter 'r' to return to previous menu
 
-5. enter option '8' on main menu or 'CTRL-C' anytime to exit
+5. enter option 'q' on main menu or 'CTRL-C' anytime to exit
 
 ---
 
 ## Contact
-#### huytuph@gmail.com
+#### available on request 
 
 ---
